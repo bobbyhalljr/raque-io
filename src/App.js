@@ -1,7 +1,7 @@
 import React from 'react';
 // Import sections of the website
 import {
-  AboveTheFold,
+  Vision,
   CallToAction,
   Footer,
   Mission,
@@ -14,7 +14,7 @@ import {
 const App = () => {
   return (
     <div>
-      <AboveTheFold />
+      <Vision />
       <Mission />
       <TimeLine />
       <Offices />

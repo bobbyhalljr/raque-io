@@ -1,4 +1,4 @@
-import AboveTheFold from './aboveTheFold';
+import Vision from './vision';
 import CallToAction from './callToAction';
 import Footer from './footer';
 import Mission from './mission';
@@ -7,7 +7,7 @@ import Reviews from './reviews';
 import TimeLine from './timeline';
 
 export {
-    AboveTheFold,
+    Vision,
     CallToAction,
     Footer,
     Mission,
