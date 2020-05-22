@@ -7,7 +7,7 @@ import {
   Footer,
   Mission,
   Offices,
-  Reviews,
+  Investors,
   TimeLine
 } from './sections';
 
@@ -20,7 +20,7 @@ const App = () => {
       <Mission />
       <TimeLine />
       <Offices />
-      <Reviews />
+      <Investors />
       <CallToAction />
       <Footer />
     </div>

@@ -3,7 +3,7 @@ import CallToAction from './callToAction';
 import Footer from './footer';
 import Mission from './mission';
 import Offices from './offices';
-import Reviews from './reviews';
+import Investors from './investors';
 import TimeLine from './timeline';
 import Navbar from './navbar';
 
@@ -14,6 +14,6 @@ export {
     Footer,
     Mission,
     Offices,
-    Reviews,
+    Investors,
     TimeLine
 }
