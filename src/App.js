@@ -1,6 +1,7 @@
 import React from 'react';
 // Import sections of the website
 import {
+  Navbar,
   Vision,
   CallToAction,
   Footer,
@@ -14,6 +15,7 @@ import {
 const App = () => {
   return (
     <div>
+      <Navbar />
       <Vision />
       <Mission />
       <TimeLine />
