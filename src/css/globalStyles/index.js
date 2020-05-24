@@ -16,14 +16,13 @@ const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         scroll-behavior: smooth;
-        color: ${theme.color.richBlueBlack};
-        font-family: ${theme.fontFamily};
+        color: ${theme.color.black};
+        font-family: ${theme.fontFamily[0]};
         font-size: ${theme.fontSize.body};
     }
 
     body {
         line-height: ${theme.lineHeight.body};
-
     }
 `
 

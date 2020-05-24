@@ -6,11 +6,11 @@ const theme = {
         primaryBlue: '#0688FA',
         callToActionBlue: '#329DFA',
         white: '#ffffff',
-        richBlueBlack: '#002240',
+        black: '#002240',
         duckEggBlue: '#537089',
         timeLineBg: '#EFF8FF',        
     },
-    fontFamily: "Source Sans Pro",
+    fontFamily: ["Source Sans Pro", "sans-serif"],
     fontSize: {
         h1: '58px',
         h2: '49px',
