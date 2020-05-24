@@ -8,7 +8,7 @@ const Button = styled.button`
     width: 100%;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    border: 1px solid;
+    border: none;
 
     ${({ primary }) => primary &&
       css`

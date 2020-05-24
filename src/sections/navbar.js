@@ -7,7 +7,7 @@ import logo from '../assets/logos/sales-whale-logo.svg';
 const NavBarStyles = styled.div`
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     white-space: nowrap;
     margin: 1rem auto;
     max-width: 1440px;
