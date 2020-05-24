@@ -1,8 +1,8 @@
 import { css } from 'styled-components';
 
 // create an object with properties that any component can access
-export const theme = {
-    colors: {
+const theme = {
+    color: {
         primaryBlue: '#0688FA',
         callToActionBlue: '#329DFA',
         white: '#ffffff',
@@ -10,8 +10,8 @@ export const theme = {
         duckEggBlue: '#537089',
         timeLineBg: '#EFF8FF',        
     },
-    fonts: ['Source Sans Pro', "sans-serif", "Roboto"],
-    fontSizes: {
+    fontFamily: "Source Sans Pro",
+    fontSize: {
         h1: '58px',
         h2: '49px',
         h3: '32px',
@@ -25,8 +25,13 @@ export const theme = {
         bold: '700',
 
     },
+    lineHeight: {
+        body: '32px',
+        footer: '42px',
+    },
     boxShadow: {
         card: '0px 10px 40px rgba(0, 0, 0, 0.08)',
+        ctaButton: '0px 5px 15px rgba(0, 0, 0, 0.3)',
     },
     borderRadius: {
         default: '5px',
@@ -56,3 +61,6 @@ export const theme = {
         `
     }
 }
+
+export default theme;
+
