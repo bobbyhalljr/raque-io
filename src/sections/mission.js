@@ -52,7 +52,7 @@ const ButtonContainer = styled.div`
     white-space: nowrap;
 
     @media(max-width: 500px){
-        width: 40%;
+        width: 50%;
     }
 `
 
@@ -76,7 +76,7 @@ const LightText = styled.h3`
     @media(max-width: 500px){
         text-align: left;
         width: 100%;
-        padding: 0 3rem;
+        padding: 0 1rem 0 2rem;
     }
 `
 
@@ -89,6 +89,7 @@ const DarkText = styled(LightText)`
 
     @media(max-width: 500px){
         margin-top: 0;
+        padding: 0 1rem 0 2rem;
     }
 `
 
@@ -121,8 +122,9 @@ const Box = styled.div`
     @media(max-width: 500px){
         width: 100%;
         justify-content: flex-start;
-        margin-bottom: 3rem;
-        height: auto;
+        margin: 0 0 3rem 0;
+        padding: 0;
+        height: 200px;
     }
 
     img {
