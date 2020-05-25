@@ -1,11 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from 'styled-reset';
-import theme from '../../theme';
-
-// destructure theme from props
-// const { theme } = props;
 
 const GlobalStyle = createGlobalStyle`
+    /* import google fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
     /* reset the browser default css */
     ${reset}
 
@@ -16,13 +15,13 @@ const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         scroll-behavior: smooth;
-        color: ${theme.color.black};
-        font-family: ${theme.fontFamily[0]};
-        font-size: ${theme.fontSize.body};
     }
 
     body {
-        line-height: ${theme.lineHeight.body};
+        line-height: ${props => props.theme.lineHeight.body};
+        color: ${props => props.theme.color.black};
+        font-family: ${props => props.theme.fontFamily[0]};
+        font-size: ${props => props.theme.fontSize.body};
     }
 `
 

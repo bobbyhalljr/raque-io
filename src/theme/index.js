@@ -10,7 +10,7 @@ const theme = {
         duckEggBlue: '#537089',
         timeLineBg: '#EFF8FF',        
     },
-    fontFamily: ["Source Sans Pro", "sans-serif"],
+    fontFamily: ["Source Sans Pro", "Arial", "Helvetica"],
     fontSize: {
         h1: '58px',
         h2: '49px',
@@ -26,8 +26,10 @@ const theme = {
 
     },
     lineHeight: {
-        body: '32px',
-        footer: '42px',
+        headingDesktop: '107%', 
+        headingMobile: '100%', 
+        body: '1.5',
+        footer: '1.7',
     },
     boxShadow: {
         card: '0px 10px 40px rgba(0, 0, 0, 0.08)',

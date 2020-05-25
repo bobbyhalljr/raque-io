@@ -19,15 +19,15 @@ const Wrapper = styled.div`
   position: relative;
   padding-top: .7rem;
   cursor: pointer;
-  width: 3rem;
+  /* width: 3rem; */
   display: block;
   & span {
     background: ${props => props.theme.color.black};
     display: block;
     position: relative;
-    width: 3rem;
+    width: 2.5rem;
     height: .3rem;
-    margin-bottom: .7rem;
+    margin-bottom: .4rem;
     transition: all ease-in-out 0.2s;
   }
   .open span:nth-child(2) {
@@ -35,10 +35,10 @@ const Wrapper = styled.div`
     }
   .open span:nth-child(3) {
     transform: rotate(45deg);
-    top: -17px;
+    top: -12px;
   }
   .open span:nth-child(1) {
     transform: rotate(-45deg);
-    top: 17px;
+    top: 12px;
   }
 `;
