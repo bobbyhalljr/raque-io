@@ -34,15 +34,12 @@ const Container = styled.div`
     max-width: 1440px;
 
     @media(max-width: 786px){
-        width: 90%
+        width: 95%;
     }
 
     @media(max-width: 500px){
         flex-direction: column;
-    }
-
-    @media(max-width: 420px){
-        flex-direction: column;
+        width: 96%;
     }
 `
 

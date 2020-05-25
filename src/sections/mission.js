@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import missionImage from '../assets/images/mission-image.jpg';
 import Button from '../components/button';
+import HeaderText from '../components/headerText';
 
 const Mission = () => {
     return (
@@ -43,23 +44,22 @@ const Container = styled.div`
     width: 100%;
     margin: 3rem auto;
     max-width: 1440px;
+
+    @media(max-width: 500px){
+        padding: 0 2rem;
+    }
 `
 
 const ButtonContainer = styled.div`
     display: flex;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     width: 20%;
     white-space: nowrap;
 
     @media(max-width: 500px){
-        width: 50%;
+        width: 70%;
+        font-size: 16px;
     }
-`
-
-const HeaderText = styled.h1`
-    text-align: center;
-    font-weight: ${props => props.theme.fontWeight.bold};
-    font-size: ${props => props.theme.fontSize.h1};
 `
 
 const LightText = styled.h3`
@@ -71,12 +71,13 @@ const LightText = styled.h3`
     @media(max-width: 786px){
         width: 90%;
         margin: 0 auto;
+        font-size: 16px;
     }
 
     @media(max-width: 500px){
         text-align: left;
         width: 100%;
-        padding: 0 1rem 0 2rem;
+        margin-top: 1rem;
     }
 `
 
@@ -89,7 +90,6 @@ const DarkText = styled(LightText)`
 
     @media(max-width: 500px){
         margin-top: 0;
-        padding: 0 1rem 0 2rem;
     }
 `
 
@@ -99,10 +99,14 @@ const BoxDiv = styled.div`
     align-items: baseline;
     margin: 2rem;
 
+    @media(max-width: 786px){
+        margin: 1rem;
+    }
+
     @media(max-width: 500px){
         flex-direction: column;
-        margin-bottom: 1rem;
         margin-top: 3rem;
+        width: 100%;
     }
 `
 
@@ -114,17 +118,16 @@ const Box = styled.div`
     margin: 2rem;
 
     @media(max-width: 786px){
-        width: 30%;
-        margin: 0 1rem 0 1rem;
+        width: 100%;
+        margin: 1rem 1rem 0 1rem;
         height: 300px;
     }
 
     @media(max-width: 500px){
         width: 100%;
         justify-content: flex-start;
-        margin: 0 0 3rem 0;
-        padding: 0;
-        height: 200px;
+        margin: 0 0 1rem 0;
+        height: auto;
     }
 
     img {
@@ -137,5 +140,7 @@ const Box = styled.div`
     }
     p {
         color: ${props => props.theme.color.duckEggBlue};
+        padding: 1rem 0;
+        font-size: 16px;
     }
 `

@@ -37,7 +37,7 @@ const theme = {
     },
     borderRadius: {
         default: '5px',
-        roundImage: '50%',
+        circle: '50%',
     },
     screenSize: {
         mobile: css`
