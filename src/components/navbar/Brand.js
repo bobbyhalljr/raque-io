@@ -13,6 +13,11 @@ const Image = styled.img`
     margin: 0;
     padding: 0;
   }
+  @media(max-width: 420px){
+    width: 90px;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const Brand = () => {

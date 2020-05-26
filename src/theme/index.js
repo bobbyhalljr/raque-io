@@ -1,7 +1,5 @@
-import { css } from 'styled-components';
-
-// create an object with properties that any component can access
-const theme = {
+// theme object with properties that any component can access
+export const theme = {
     color: {
         primaryBlue: '#0688FA',
         callToActionBlue: '#329DFA',
@@ -23,7 +21,6 @@ const theme = {
         normal: '400',
         semiBold: '600',
         bold: '700',
-
     },
     lineHeight: {
         headingDesktop: '107%', 
@@ -31,6 +28,7 @@ const theme = {
         body: '1.5',
         footer: '1.7',
     },
+    padding: '1rem 0.5rem',
     boxShadow: {
         card: '0px 10px 40px rgba(0, 0, 0, 0.08)',
         ctaButton: '0px 5px 15px rgba(0, 0, 0, 0.3)',
@@ -39,29 +37,6 @@ const theme = {
         default: '5px',
         circle: '50%',
     },
-    screenSize: {
-        mobile: css`
-            @media(max-width: 320px){
-                width: 90vw;
-                display: flex;
-                justify-content: center;
-            }
-        `,
-        tablet: css`
-            @media(max-width: 768px){
-                width: 80vw;
-                display: flex;
-                justify-content: center;
-            }
-        `,
-        desktop: css`
-            @media(max-width: 1440px){
-                width: 80vw;
-                display: flex;
-                justify-content: center;
-            }
-        `
-    }
 }
 
 export default theme;

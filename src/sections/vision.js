@@ -7,7 +7,7 @@ const Vision = () => {
     return (
         <>
         <HeroImgContainer>
-            <img src={heroImage} alt='a painting'/>
+            <Image src={heroImage} alt='a painting'/>
         </HeroImgContainer>
         <Container>
             <HeadLineText>
@@ -46,25 +46,24 @@ const Container = styled.div`
 const HeroImgContainer = styled.div`
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     max-width: 1440px;
     height: 300px;
     margin: 6.5rem auto 1rem auto;
 
     @media(max-width: 786px){
-        width: 90%;
         margin: 6.5rem auto 1rem auto;
     }
 
     @media(max-width: 420px){
-        width: 90%;
         margin: 6.5rem auto 1rem auto;
     }
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: ${props => props.theme.borderRadius.default};
-    }
+`
+
+const Image = styled.img`
+    width: 100%;
+    object-fit: cover;
+    border-radius: ${props => props.theme.borderRadius.default};
 `
 
 const ParagraphContainer = styled.div`

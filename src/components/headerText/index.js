@@ -11,6 +11,8 @@ const HeaderText = styled.h1`
 
     @media(max-width: 500px){
         font-size: 28px;
+        text-align: center;
+        margin-top: 3rem;
     }
 `
 

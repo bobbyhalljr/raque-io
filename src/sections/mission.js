@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import missionImage from '../assets/images/mission-image.jpg';
 import Button from '../components/button';
-import HeaderText from '../components/headerText';
 
 const Mission = () => {
     return (
@@ -46,18 +45,36 @@ const Container = styled.div`
     max-width: 1440px;
 
     @media(max-width: 500px){
-        padding: 0 2rem;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+`
+
+const HeaderText = styled.h1`
+    text-align: center;
+    font-weight: ${props => props.theme.fontWeight.bold};
+    font-size: ${props => props.theme.fontSize.h1};
+
+    @media(max-width: 786px){
+        font-size: ${props => props.theme.fontSize.h3};
+    }
+
+    @media(max-width: 500px){
+        font-size: 28px;
+        text-align: left;
+        margin-top: 2rem;
     }
 `
 
 const ButtonContainer = styled.div`
     display: flex;
     margin: 0.5rem auto;
-    width: 20%;
     white-space: nowrap;
 
     @media(max-width: 500px){
-        width: 70%;
+        margin: 0 auto;
+        width: 100%;
         font-size: 16px;
     }
 `
@@ -67,10 +84,11 @@ const LightText = styled.h3`
     font-size: ${props => props.theme.fontSize.h5};
     color: ${props => props.theme.color.duckEggBlue};
     text-align: center;
+    line-height: 150%;
 
     @media(max-width: 786px){
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 1rem auto;
         font-size: 16px;
     }
 
@@ -89,13 +107,13 @@ const DarkText = styled(LightText)`
     }
 
     @media(max-width: 500px){
-        margin-top: 0;
+        margin-top: 1rem;
     }
 `
 
 const BoxDiv = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     margin: 2rem;
 
@@ -105,7 +123,7 @@ const BoxDiv = styled.div`
 
     @media(max-width: 500px){
         flex-direction: column;
-        margin-top: 3rem;
+        margin: 2rem 0 0 0;
         width: 100%;
     }
 `
@@ -126,7 +144,7 @@ const Box = styled.div`
     @media(max-width: 500px){
         width: 100%;
         justify-content: flex-start;
-        margin: 0 0 1rem 0;
+        margin: 0;
         height: auto;
     }
 

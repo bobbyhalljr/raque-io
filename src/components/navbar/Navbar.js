@@ -6,6 +6,7 @@ import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
 import Button from '../../components/button';
+import Container from '../container';
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
@@ -21,7 +22,7 @@ const Navbar = (props) => {
   });
 
   return (
-    <>
+    <Container>
       <NavBar style={barAnimation}>
         <FlexContainer>
           <Brand />
@@ -46,7 +47,7 @@ const Navbar = (props) => {
         navbarState={props.navbarState} 
         handleNavbar={props.handleNavbar}
       />
-   </>
+   </Container>
   )
 }
 
@@ -58,7 +59,7 @@ const NavBar = styled(animated.nav)`
   top: 0;
   left: 0;
   background: ${props => props.theme.color.white};
-  z-index: 1;
+  z-index: 100;
   font-size: ${props => props.theme.fontSize.normal};
 `;
 

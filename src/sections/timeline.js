@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import HeaderText from '../components/headerText';
 import envolope from '../assets/icons/envolope.svg';
-import timelineRuler from '../assets/graphics/timeline-ruler.svg';
 
 const TimeLine = () => {
     return (
@@ -76,6 +75,12 @@ const BlueBgDiv = styled.div`
     border-radius: ${props => props.theme.borderRadius.default};
     position: relative;
     max-width: 1440px;
+    @media(max-width: 786px){
+        width: 90%;
+    }
+    @media(max-width: 500px){
+        width: 90%;
+    }
 
     &:after {
         content: '';
@@ -87,7 +92,7 @@ const BlueBgDiv = styled.div`
         left: 22%;
         right: 0;
         @media(max-width: 1440px){
-            left: 24%;
+            left: 22%;
         }
         @media(max-width: 1330px){
             left: 26%;
@@ -95,14 +100,23 @@ const BlueBgDiv = styled.div`
         @media(max-width: 1220px){
             left: 28%;
         }
-        @media(max-width: 1140px){
-            left: 30%;
+        @media(max-width: 1024px){
+            left: 31%;
         }
         @media(max-width: 786px){
-            left: 20%;
+            left: 21%;
         }
         @media(max-width: 500px){
-            left: 33%;
+            left: 24%;
+        }
+        @media(max-width: 411px){
+            left: 28%;
+        }
+        @media(max-width: 375px){
+            left: 31%;
+        }
+        @media(max-width: 320px){
+            left: 36%
         }
     }
 `
@@ -130,7 +144,10 @@ const TimeLineInfo = styled.div`
             font-weight: ${props => props.theme.fontWeight.normal};
         }
     }
-
+    @media(max-width: 500px){
+        width: 100%;
+        margin: 1rem 0;
+    }
     h4 {
         font-size: ${props => props.theme.fontSize.h4};
         font-weight: ${props => props.theme.fontWeight.semiBold};
@@ -143,6 +160,10 @@ const ImageContainer = styled.div`
     border-radius: ${props => props.theme.borderRadius.circle};
     padding: 1.3rem;
     z-index: 10;
+    @media(max-width: 500px){
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+    }
 `
 
 const Date = styled.h4`
