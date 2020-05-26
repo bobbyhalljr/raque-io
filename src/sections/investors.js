@@ -46,6 +46,7 @@ const OuterContainer = styled.div`
         top: 0;
         width: 100%;
         height: auto;
+        z-index: -10;
     }
     @media(max-width: 500px){
         .pink-slant {
