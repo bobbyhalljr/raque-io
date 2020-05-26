@@ -41,8 +41,12 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin: 3rem auto;
+    margin: 6rem auto;
     max-width: 1440px;
+
+    @media(max-width: 786px){
+        margin-top: 3rem;
+    }
 
     @media(max-width: 500px){
         padding: 0 1.5rem;
@@ -71,6 +75,7 @@ const ButtonContainer = styled.div`
     display: flex;
     margin: 0.5rem auto;
     white-space: nowrap;
+    width: 30%;
 
     @media(max-width: 500px){
         margin: 0 auto;

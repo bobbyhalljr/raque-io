@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import theme from '../theme';
-// import Container from '../components/container';
 import HeadlineText from '../components/headerText';
 import Card from '../components/card';
 import officeImage from '../assets/images/offices-image.jpg';
@@ -10,7 +9,7 @@ import pinkSlant from '../assets/graphics/pink-slant-bg.svg';
 
 const Offices = () => {
     return (
-        <>
+        <OuterContainer>
         <HeadlineText>Our Offices</HeadlineText>
         <Container>
             <Card>
@@ -25,36 +24,42 @@ const Offices = () => {
             </Card>
             <img className='pink-slant' src={pinkSlant} alt='pink slant' />
         </Container>
-        </>
+        </OuterContainer>
     )
 }
 
 export default Offices;
 
 
-const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 3rem auto;
-    padding-bottom: 1rem;
-    max-width: 1440px;
+const OuterContainer = styled.div`
     position: relative;
-
+    margin-bottom: 0;
+    padding-bottom: 0;
     .pink-slant {
         position: absolute;
         bottom: 0;
         width: 100%;
-        max-width: 1440px;
-        height: 300px;
+        height: auto;
     }
+    @media(max-width: 500px){
+        .pink-slant {
+            height: 900px;
+        }
+    }
+`
+
+
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 3rem auto 0 auto;
+    padding-bottom: 1rem;
+    max-width: 1440px;
 
     @media(max-width: 500px){
         flex-direction: column;
         margin: 0 auto 3rem auto;
-        .pink-slant {
-            height: 1100px;
-        }
     }
 `
 

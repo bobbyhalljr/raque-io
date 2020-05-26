@@ -6,7 +6,8 @@ export const theme = {
         white: '#ffffff',
         black: '#002240',
         duckEggBlue: '#537089',
-        timeLineBg: '#EFF8FF',        
+        timeLineBg: '#EFF8FF', 
+        pink: '#FFF5F5',
     },
     fontFamily: ["Source Sans Pro", "Arial", "Helvetica"],
     fontSize: {
