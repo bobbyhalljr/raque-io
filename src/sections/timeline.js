@@ -113,7 +113,7 @@ const BlueBgDiv = styled.div`
             left: 28%;
         }
         @media(max-width: 375px){
-            left: 32%;
+            left: 30%;
         }
         @media(max-width: 320px){
             left: 36%
