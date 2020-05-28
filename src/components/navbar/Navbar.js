@@ -2,10 +2,10 @@ import React from 'react'
 import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
 
+import ButtonLink from '../buttonLink';
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
-import Button from '../../components/button';
 import Container from '../container';
 
 const Navbar = (props) => {
@@ -32,8 +32,8 @@ const Navbar = (props) => {
             <a href="/">Company</a>
           </NavLinks>
           <ButtonContainer>
-            <Button outline>Login</Button>
-            <Button primary>Get a Demo</Button>
+            <ButtonLink href='https://app.saleswhale.com/login' outline>Login</ButtonLink>
+            <ButtonLink href='https://www.saleswhale.com/get-a-free-demo?ref=topNav' primary>Get a Demo</ButtonLink>
           </ButtonContainer>
           <BurgerWrapper>
             <BurgerMenu
@@ -91,7 +91,7 @@ const NavLinks = styled(animated.ul)`
   margin: 0 auto;
   padding-left: 10rem;
   
-  & a {
+   a {
     color: ${props => props.theme.color.black};
     font-weight: ${props => props.theme.fontWeight.bold};
     border-bottom: 1px solid transparent;
@@ -114,4 +114,4 @@ const BurgerWrapper = styled.div`
   @media (min-width: 769px) {
     display: none;
   }
-`;
+`

@@ -8,7 +8,8 @@ import {
   Mission,
   Offices,
   Investors,
-  TimeLine
+  TimeLine,
+  BottomFooter
 } from './sections';
 
 import Navbar from './components/navbar/Navbar';
@@ -43,6 +44,7 @@ const App = () => {
         <Investors />
         <CallToAction />
         <Footer />
+        <BottomFooter />
         <GlobalStyle />
        </ThemeProvider>
     </>

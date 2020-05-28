@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 
-import Button from '../../components/button';
+import ButtonLink from '../buttonLink';
 
 const CollapseWrapper = styled(animated.div)`
   display: flex;
@@ -67,8 +67,8 @@ const CollapseMenu = (props) => {
         </NavLinks>
         </div>
         <ButtonContainer>
-            <Button outline>Login</Button>
-            <Button primary>Get a Demo</Button>
+            <ButtonLink href='https://app.saleswhale.com/login' outline center>Login</ButtonLink>
+            <ButtonLink href='https://www.saleswhale.com/get-a-free-demo?ref=topNav' primary center>Get a Demo</ButtonLink>
           </ButtonContainer>
       </CollapseWrapper>
     );
