@@ -20,7 +20,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './theme';
 
 // import GlobalStyles for website
-import GlobalStyle from './css/globalStyles';
+import GlobalStyle from './globalStyles';
 
 // Render all the sections in the website
 const App = () => {

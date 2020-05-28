@@ -49,14 +49,14 @@ const HeroImgContainer = styled.div`
     width: 90%;
     max-width: 1440px;
     height: 300px;
-    margin: 6.5rem auto 1rem auto;
+    margin: 4rem auto 1rem auto;
 
     @media(max-width: 786px){
-        margin: 6.5rem auto 1rem auto;
+        margin: 4rem auto 1rem auto;
     }
 
     @media(max-width: 420px){
-        margin: 6.5rem auto 1rem auto;
+        margin: 4rem auto 1rem auto;
     }
 `
 

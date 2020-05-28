@@ -39,11 +39,11 @@ const OuterContainer = styled.div`
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: auto;
+        height: 350px;
     }
     @media(max-width: 500px){
         .pink-slant {
-            height: 900px;
+            height: 1100px;
         }
     }
 `
@@ -59,7 +59,8 @@ const Container = styled.div`
 
     @media(max-width: 500px){
         flex-direction: column;
-        margin: 0 auto 3rem auto;
+        margin: 0 auto;
+        padding-bottom: 6rem;
     }
 `
 

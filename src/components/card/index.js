@@ -12,7 +12,7 @@ const Card = styled.div`
     border-radius: ${theme.borderRadius.default};
     background: ${theme.color.white};
     width: 40%;
-    z-index: 10;
+    z-index: 3;
 
     @media(max-width: 500px){
         width: 90%;
