@@ -22,7 +22,7 @@ I've only use thing library a hand full of times but It allows me to create nice
 This library is just one of many CSS reset libraries. Since I'm using styled components, it only made sense to use it.
 
 ### Buttons and Links
-I thought it would be cool if all the buttons and links worked. so all the URL's in the links and buttons work and are from the saleswhale website. (execpt the top nav, Which I choose to use a micro animation on click)
+I thought it would be cool if all the buttons and links worked. so most of the URL's in the links and buttons work and are from the saleswhale website. (execpt the top nav, Which I choose to use a micro animation on click)
 
 #### Mobile Nav
 I choose to create a mobile drop down navbar even though it was not in the figma.
