@@ -30,6 +30,18 @@ const ButtonLink = styled.a`
       css`
         text-align: center;
       `};
+
+      ${({ outlineInverse }) => outlineInverse && 
+      css`
+        color: ${theme.color.white};
+        background: ${theme.color.primaryBlue};
+        border: 1px solid ${theme.color.white};
+      `};
+
+      ${({ boxShadow }) => boxShadow && 
+      css`
+        box-shadow: ${theme.boxShadow.ctaButton};
+      `};
 `
 
 export default ButtonLink

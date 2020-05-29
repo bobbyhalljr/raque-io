@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import missionImage from '../assets/images/mission-image.jpg';
-import Button from '../components/button';
+import ButtonLink from '../components/buttonLink';
 import theme from '../theme';
 
 const Mission = () => {
@@ -29,7 +29,7 @@ const Mission = () => {
             </BoxDiv>
             <DarkText>If you are excited by our vision of the future, and want to solve meaningful problems, talk to us!</DarkText>
             <ButtonContainer>
-                <Button primary>Join the team</Button>
+                <ButtonLink href='https://jobs.lever.co/saleswhale/' primary center>Join the team</ButtonLink>
             </ButtonContainer>
         </Container>
     )

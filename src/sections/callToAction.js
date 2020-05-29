@@ -3,15 +3,15 @@ import styled from 'styled-components';
 
 import theme from '../theme';
 import HeaderText from '../components/headerText';
-import Button from '../components/button';
+import ButtonLink from '../components/buttonLink';
 
 const CallToAction = () => {
     return (
         <Container>
             <HeaderText white>See the future</HeaderText>
             <ButtonContainer>
-                <Button boxShadow>Get a Demo</Button>
-                <Button outlineInverse>Read use cases</Button>
+                <ButtonLink href='https://www.saleswhale.com/get-a-free-demo?ref=topNav' center boxShadow>Get a Demo</ButtonLink>
+                <ButtonLink href='https://www.saleswhale.com/education' center outlineInverse>Read use cases</ButtonLink>
             </ButtonContainer>
         </Container>
     )
