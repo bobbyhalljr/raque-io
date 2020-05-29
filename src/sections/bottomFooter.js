@@ -137,5 +137,5 @@ const SocialLinks = styled.div`
 
 const BoldText = styled.span`
     font-weight: ${theme.fontWeight.bold};
-    padding: 0.5rem 0;
+    padding: 0.5rem;
 `

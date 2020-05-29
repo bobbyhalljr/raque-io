@@ -95,7 +95,7 @@ const BlueBgDiv = styled.div`
         left: 22%;
         right: 0;
         @media(max-width: 1440px){
-            left: 22%;
+            left: 24%;
         }
         @media(max-width: 1330px){
             left: 26%;
@@ -107,7 +107,7 @@ const BlueBgDiv = styled.div`
             left: 31%;
         }
         @media(max-width: 786px){
-            left: 21%;
+            left: 23%;
         }
         @media(max-width: 500px){
             left: 24%;
