@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import HeaderText from '../components/headerText';
 import envolope from '../assets/icons/envolope.svg';
+import theme from '../theme';
 
 const TimeLine = () => {
     return (
@@ -69,10 +70,10 @@ const Container = styled.div`
 
 const BlueBgDiv = styled.div`
     width: 100%;
-    background: ${props => props.theme.color.timeLineBg};
+    background: ${theme.color.timeLineBg};
     padding: 2rem 1rem;
     margin: 1rem 4rem;
-    border-radius: ${props => props.theme.borderRadius.default};
+    border-radius: ${theme.borderRadius.default};
     position: relative;
     max-width: 1440px;
     @media(max-width: 786px){
@@ -88,7 +89,7 @@ const BlueBgDiv = styled.div`
         content: '';
         position: absolute;
         width: 3px;
-        background-color: ${props => props.theme.color.primaryBlue};
+        background-color: ${theme.color.primaryBlue};
         top: 0;
         bottom: 0;
         left: 22%;
@@ -143,7 +144,7 @@ const TimeLineInfo = styled.div`
     @media(max-width: 786px){
         #timeline-text {
             font-size: 16px;
-            font-weight: ${props => props.theme.fontWeight.normal};
+            font-weight: ${theme.fontWeight.normal};
         }
     }
     @media(max-width: 500px){
@@ -151,15 +152,15 @@ const TimeLineInfo = styled.div`
         margin: 1rem 0;
     }
     h4 {
-        font-size: ${props => props.theme.fontSize.h4};
-        font-weight: ${props => props.theme.fontWeight.semiBold};
+        font-size: ${theme.fontSize.h4};
+        font-weight: ${theme.fontWeight.semiBold};
     }
 ` 
 
 const ImageContainer = styled.div`
     margin: 0 1.5rem;
-    background: ${props => props.theme.color.white};
-    border-radius: ${props => props.theme.borderRadius.circle};
+    background: ${theme.color.white};
+    border-radius: ${theme.borderRadius.circle};
     padding: 1.3rem;
     z-index: 10;
     @media(max-width: 500px){
@@ -169,11 +170,11 @@ const ImageContainer = styled.div`
 `
 
 const Date = styled.h4`
-    color: ${props => props.theme.color.primaryBlue};
-    font-size: ${props => props.theme.fontSize.h4};
-    font-weight: ${props => props.theme.fontWeight.bold};
+    color: ${theme.color.primaryBlue};
+    font-size: ${theme.fontSize.h4};
+    font-weight: ${theme.fontWeight.bold};
 
     @media(max-width: 786px){
-        font-size: ${props => props.theme.fontSize.normal};
+        font-size: ${theme.fontSize.normal};
     }
 `

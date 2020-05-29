@@ -1,11 +1,12 @@
 import styled, { css } from 'styled-components';
+import theme from '../../theme';
 
 const Button = styled.button`
-    color: ${ props => props.theme.color.black };
-    background: ${props => props.theme.color.white};
-    border-radius: ${props => props.theme.borderRadius.default};
-    font-weight: ${props => props.theme.fontWeight.normal};
-    font-size: ${props => props.theme.fontSize.body};
+    color: ${theme.color.black};
+    background: ${theme.color.white};
+    border-radius: ${theme.borderRadius.default};
+    font-weight: ${theme.fontWeight.normal};
+    font-size: ${theme.fontSize.body};
     width: 100%;
     padding: 0.7rem 2rem;
     margin: 1rem;
@@ -13,27 +14,27 @@ const Button = styled.button`
 
     ${({ primary }) => primary &&
       css`
-        background: ${props => props.theme.color.primaryBlue};
-        color: ${props => props.theme.color.white};
+        background: ${theme.color.primaryBlue};
+        color: ${theme.color.white};
       `};
 
     ${({ outline }) => outline && 
       css`
-        color: ${props => props.theme.color.primaryBlue};
-        background: ${props => props.theme.color.white};
-        border: 1px solid ${props => props.theme.color.primaryBlue};
+        color: ${theme.color.primaryBlue};
+        background: ${theme.color.white};
+        border: 1px solid ${theme.color.primaryBlue};
       `};
     
       ${({ outlineInverse }) => outlineInverse && 
       css`
-        color: ${props => props.theme.color.white};
-        background: ${props => props.theme.color.primaryBlue};
-        border: 1px solid ${props => props.theme.color.white};
+        color: ${theme.color.white};
+        background: ${theme.color.primaryBlue};
+        border: 1px solid ${theme.color.white};
       `};
 
       ${({ boxShadow }) => boxShadow && 
       css`
-        box-shadow: ${props => props.theme.boxShadow.ctaButton};
+        box-shadow: ${theme.boxShadow.ctaButton};
       `};
 `
 

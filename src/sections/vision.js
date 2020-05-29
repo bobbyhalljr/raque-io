@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import heroImage from '../assets/images/hero-img.png';
+import theme from '../theme';
 
 const Vision = () => {
     return (
@@ -62,7 +63,7 @@ const HeroImgContainer = styled.div`
 const Image = styled.img`
     width: 100%;
     object-fit: cover;
-    border-radius: ${props => props.theme.borderRadius.default};
+    border-radius: ${theme.borderRadius.default};
 `
 
 const ParagraphContainer = styled.div`
@@ -84,15 +85,15 @@ const ParagraphContainer = styled.div`
 
 const HeadLineText = styled.h1`
     margin: 1rem;
-    font-size: ${props => props.theme.fontSize.h1};
-    font-weight: ${props => props.theme.fontWeight.bold};
-    line-height: ${props => props.theme.lineHeight.headingDesktop};
+    font-size: ${theme.fontSize.h1};
+    font-weight: ${theme.fontWeight.bold};
+    line-height: ${theme.lineHeight.headingDesktop};
     width: 50%;
 
     @media(max-width: 786px){
         text-align: left;
-        font-size: ${props => props.theme.fontSize.h3};
-        line-height: ${props => props.theme.lineHeight.headingMobile};
+        font-size: ${theme.fontSize.h3};
+        line-height: ${theme.lineHeight.headingMobile};
     }
 
     @media(max-width: 500px){

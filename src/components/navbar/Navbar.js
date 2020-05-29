@@ -7,6 +7,7 @@ import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
 import Container from '../container';
+import theme from '../../theme';
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
@@ -58,9 +59,9 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: ${props => props.theme.color.white};
+  background: ${theme.color.white};
   z-index: 50;
-  font-size: ${props => props.theme.fontSize.normal};
+  font-size: ${theme.fontSize.normal};
 `;
 
 const FlexContainer = styled.div`
@@ -77,7 +78,6 @@ const FlexContainer = styled.div`
 const ButtonContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  /* width: 40%; */
   white-space: nowrap;
   padding-right: 3rem;
   @media (max-width: 786px) {
@@ -94,8 +94,8 @@ const NavLinks = styled(animated.ul)`
   padding-left: 10rem;
   
    a {
-    color: ${props => props.theme.color.black};
-    font-weight: ${props => props.theme.fontWeight.bold};
+    color: ${theme.color.black};
+    font-weight: ${theme.fontWeight.bold};
     border-bottom: 1px solid transparent;
     margin: 0 0.5rem;
     padding: 0 0.5rem;
@@ -103,7 +103,7 @@ const NavLinks = styled(animated.ul)`
     text-decoration: none;
     cursor: pointer;
     &:hover {
-      color: ${props => props.theme.color.primaryBlue};
+      color: ${theme.color.primaryBlue};
     }
     @media (max-width: 786px) {
       display: none;

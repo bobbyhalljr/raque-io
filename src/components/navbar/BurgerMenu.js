@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import theme from '../../theme';
 
 const Burgermenu = (props) => {
   return (
@@ -27,7 +28,7 @@ const Wrapper = styled.div`
     padding-right: 1rem;
   }
   & span {
-    background: ${props => props.theme.color.black};
+    background: ${theme.color.black};
     display: block;
     position: relative;
     width: 2.5rem;

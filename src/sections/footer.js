@@ -86,7 +86,6 @@ const Container = styled.div`
     align-items: baseline;
     width: 100%;
     margin: 1rem auto 3rem auto;
-    /* padding: 1rem; */
     overflow-x: hidden;
     max-width: 1440px;
     @media(max-width: 786px){
@@ -130,7 +129,6 @@ const ImageContainer2 = styled.div`
     }
     @media(max-width: 500px){
         visibility: visible;
-        /* width: 50%; */
         margin-right: 0;
         padding: 2rem 0 1rem 1rem;
     }

@@ -3,6 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 
 import ButtonLink from '../buttonLink';
+import theme from '../../theme';
 
 const CollapseWrapper = styled(animated.div)`
   display: flex;
@@ -25,13 +26,13 @@ const NavLinks = styled.ul`
   }
   & a {
     text-align: center;
-    font-size: ${props => props.theme.fontSize.normal};
+    font-size: ${theme.fontSize.normal};
     line-height: 2;
-    color: ${props => props.theme.color.black};
+    color: ${theme.color.black};
     text-decoration: none;
     cursor: pointer;
     &:hover {
-      color: ${props => props.theme.color.primaryBlue};
+      color: ${theme.color.primaryBlue};
     }
   }
 `;
@@ -50,8 +51,8 @@ const CollapseMenu = (props) => {
     return (
       <CollapseWrapper style={{
         color: 'white',
-        background: `${props => props.theme.color.black}`,
-        // margin: '0 auto',
+        background: `${theme.color.black}`,
+        margin: '0 auto',
         zIndex: '50',
         transform: open.interpolate({
           range: [0, 0.2, 0.3, 1],

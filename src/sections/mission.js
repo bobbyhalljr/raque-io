@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import missionImage from '../assets/images/mission-image.jpg';
 import Button from '../components/button';
+import theme from '../theme';
 
 const Mission = () => {
     return (
@@ -57,11 +58,11 @@ const Container = styled.div`
 
 const HeaderText = styled.h1`
     text-align: center;
-    font-weight: ${props => props.theme.fontWeight.bold};
-    font-size: ${props => props.theme.fontSize.h1};
+    font-weight: ${theme.fontWeight.bold};
+    font-size: ${theme.fontSize.h1};
 
     @media(max-width: 786px){
-        font-size: ${props => props.theme.fontSize.h3};
+        font-size: ${theme.fontSize.h3};
     }
 
     @media(max-width: 500px){
@@ -86,8 +87,8 @@ const ButtonContainer = styled.div`
 
 const LightText = styled.h3`
     margin-top: 1rem;
-    font-size: ${props => props.theme.fontSize.h5};
-    color: ${props => props.theme.color.duckEggBlue};
+    font-size: ${theme.fontSize.h5};
+    color: ${theme.color.duckEggBlue};
     text-align: center;
     line-height: 150%;
 
@@ -105,7 +106,7 @@ const LightText = styled.h3`
 `
 
 const DarkText = styled(LightText)`
-    color: ${props => props.theme.color.black};
+    color: ${theme.color.black};
 
     @media(max-width: 786px){
         margin-top: 2rem;
@@ -158,11 +159,11 @@ const Box = styled.div`
         margin-bottom: 1rem;
     }
     h5 {
-        font-size: ${props => props.theme.fontSize.h5};
-        font-weight: ${props => props.theme.fontWeight.bold};
+        font-size: ${theme.fontSize.h5};
+        font-weight: ${theme.fontWeight.bold};
     }
     p {
-        color: ${props => props.theme.color.duckEggBlue};
+        color: ${theme.color.duckEggBlue};
         padding: 1rem 0;
         font-size: 16px;
     }
