@@ -51,6 +51,7 @@ const OuterContainer = styled.div`
         width: 100%;
         height: auto;
         overflow: hidden;
+        z-index: -1;
         @media(max-width: 786px){
             height: 350px;
         }
