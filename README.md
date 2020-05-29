@@ -7,7 +7,7 @@ You can find the deployed site hosted on netlify at: [saleswhale.netlify.com](sa
 - Styled Reset (used to reset browser styles)
 - Netlify
 
-## why I choose this tech stack ...
+## Why I choose this tech stack ...
 
 ### React
 I choose react because it allows me to break up my code into components and use them throughout the app. I love using hooks and creating awesome UI's.
