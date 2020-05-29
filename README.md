@@ -1,4 +1,4 @@
-You can find the deployed site hosted on netlify at: [saleswhale.netlify.app](saleswhale.netlify.app)
+You can find the deployed site hosted on netlify at: [saleswhale.netlify.app](https://saleswhale.netlify.app/)
 
 # Tech Stack:
 - React.js (Functional Components w/ hooks)
