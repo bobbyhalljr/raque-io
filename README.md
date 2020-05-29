@@ -29,7 +29,7 @@ I choose to create a mobile drop down navbar even though it was not in the figma
 
 
 # Message to saleswhale ... 
-I put alot of time an energy in this project to make it match the designs in the figma. I had so much fun and I look forward to the next steps of the interview!
+I put alot of time an energy in this project to make it match the designs in the figma. I had so much fun and I look forward to the next steps of the hiring process!
 
 
 
