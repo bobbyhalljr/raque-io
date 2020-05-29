@@ -59,26 +59,28 @@ const NavBar = styled(animated.nav)`
   top: 0;
   left: 0;
   background: ${props => props.theme.color.white};
-  z-index: 100;
+  z-index: 50;
   font-size: ${props => props.theme.fontSize.normal};
 `;
 
 const FlexContainer = styled.div`
   max-width: 1440px;
   display: flex;
+  align-items: center;
   margin: 0 auto;
   padding: 0 1rem;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 6rem;
 `;
 
 const ButtonContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
-  width: 40%;
+  /* width: 40%; */
   white-space: nowrap;
-  @media (max-width: 768px) {
+  padding-right: 3rem;
+  @media (max-width: 786px) {
       display: none;
     }
 `
@@ -103,7 +105,7 @@ const NavLinks = styled(animated.ul)`
     &:hover {
       color: ${props => props.theme.color.primaryBlue};
     }
-    @media (max-width: 768px) {
+    @media (max-width: 786px) {
       display: none;
     }
   }
@@ -111,7 +113,7 @@ const NavLinks = styled(animated.ul)`
  
 const BurgerWrapper = styled.div`
   margin: 0 auto;
-  @media (min-width: 769px) {
+  @media (min-width: 786px) {
     display: none;
   }
 `

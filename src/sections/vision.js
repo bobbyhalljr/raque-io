@@ -29,17 +29,16 @@ export default Vision;
 const Container = styled.div`
     display: flex;
     margin: 1rem auto;
-    padding: 0 1rem;
+    padding: 0 3.5rem;
     width: 100%;
     max-width: 1440px;
 
     @media(max-width: 786px){
-        width: 95%;
+        padding: 0 1.5rem;
     }
 
     @media(max-width: 500px){
         flex-direction: column;
-        width: 96%;
     }
 `
 
@@ -49,14 +48,14 @@ const HeroImgContainer = styled.div`
     width: 90%;
     max-width: 1440px;
     height: 300px;
-    margin: 4rem auto 1rem auto;
+    margin: 6rem auto 1rem auto;
 
     @media(max-width: 786px){
-        margin: 4rem auto 1rem auto;
+        margin: 5rem auto 1rem auto;
     }
 
-    @media(max-width: 420px){
-        margin: 4rem auto 1rem auto;
+    @media(max-width: 500px){
+        margin: 7rem auto 1rem auto;
     }
 `
 
@@ -69,8 +68,10 @@ const Image = styled.img`
 const ParagraphContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
-
+    width: 60%;
+    @media(max-width: 786px){
+        width: 50%;
+    }
     @media(max-width: 500px){
         width: 100%;
         margin: 0;

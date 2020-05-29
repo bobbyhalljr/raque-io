@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${theme.color.black};
         font-family: ${theme.fontFamily[0]};
         font-size: ${theme.fontSize.body};
+        overflow-x: hidden;
     }
 `
 

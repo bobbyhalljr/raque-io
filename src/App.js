@@ -41,9 +41,9 @@ const App = () => {
         <Mission />
         <TimeLine />
         <Offices />
-        <Investors />
+        <Investors />  
         <CallToAction />
-        <Footer />
+        <Footer /> 
         <BottomFooter />
         <GlobalStyle />
        </ThemeProvider>

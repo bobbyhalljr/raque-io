@@ -19,8 +19,13 @@ const Wrapper = styled.div`
   position: relative;
   padding-top: .7rem;
   cursor: pointer;
-  /* width: 3rem; */
   display: block;
+  @media(max-width: 789px){
+    padding-right: 2rem;
+  }
+  @media(max-width: 500px){
+    padding-right: 1rem;
+  }
   & span {
     background: ${props => props.theme.color.black};
     display: block;

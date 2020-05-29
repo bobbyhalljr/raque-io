@@ -51,8 +51,8 @@ const CollapseMenu = (props) => {
       <CollapseWrapper style={{
         color: 'white',
         background: `${props => props.theme.color.black}`,
-        margin: '0 auto',
-        zIndex: '100',
+        // margin: '0 auto',
+        zIndex: '50',
         transform: open.interpolate({
           range: [0, 0.2, 0.3, 1],
           output: [0, -20, 0, -200],

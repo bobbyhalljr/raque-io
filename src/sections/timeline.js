@@ -71,7 +71,7 @@ const BlueBgDiv = styled.div`
     width: 100%;
     background: ${props => props.theme.color.timeLineBg};
     padding: 2rem 1rem;
-    margin: 1rem;
+    margin: 1rem 4rem;
     border-radius: ${props => props.theme.borderRadius.default};
     position: relative;
     max-width: 1440px;
@@ -79,7 +79,9 @@ const BlueBgDiv = styled.div`
         width: 90%;
     }
     @media(max-width: 500px){
-        width: 90%;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0 1rem;
     }
 
     &:after {
@@ -110,13 +112,13 @@ const BlueBgDiv = styled.div`
             left: 24%;
         }
         @media(max-width: 411px){
-            left: 28%;
+            left: 25%;
         }
         @media(max-width: 375px){
-            left: 30%;
+            left: 27%;
         }
         @media(max-width: 320px){
-            left: 36%
+            left: 32%
         }
     }
 `

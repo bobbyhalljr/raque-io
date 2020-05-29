@@ -1,52 +1,80 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import salesWhaleLogo from '../assets/logos/sales-whale-logo.svg';
 import theme from '../theme';
 
 const Footer = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth > 500);
+
+    // updates logo image when screen size is greater than 500px
+    const updateLogo = () => {
+        setIsMobile(window.innerWidth > 500);
+    }
+    
+    // listen from screen size changes
+    useEffect(() => {
+        window.addEventListener("resize", updateLogo);
+        return () => window.removeEventListener("resize", updateLogo);
+    }, [updateLogo])
+
     return (
+        <>
+        {/* hidden on desktop / visible on mobile */}
+        <ImageContainer2>
+            <img src={salesWhaleLogo} alt='saleswhale logo' />
+        </ImageContainer2>
         <Container>
-            <ImageContainer>
+            {/* render this logo only on desktop */}
+            {isMobile ? (
+                <ImageContainer1>
                 <img src={salesWhaleLogo} alt='saleswhale logo' />
-            </ImageContainer>
-            <LinksContainer>
-                <SubHeading>Why saleswhale</SubHeading>
-                <a href='https://www.saleswhale.com/platform'>Collaborative Intelligence</a>
-                <a href='https://www.saleswhale.com/marketing'>AI Assistant Capabilities</a>
-                <a href='https://www.saleswhale.com/sales'>Customer Stories</a>
-                <a href='https://www.saleswhale.com/technology'>Use Case - Technology</a>
-                <a href='https://www.saleswhale.com/education'>Use Case - Education</a>
-                <a href='https://www.saleswhale.com/events'>Use Case - Events</a>
-            </LinksContainer>
-            <LinksContainer>
-                <SubHeading>Product</SubHeading>
-                <a href='https://www.saleswhale.com/conversations'>AI Conversations</a>
-                <a href='https://www.saleswhale.com/reveal'>Deal Intelligence</a>
-                <a href='https://www.saleswhale.com/data-collection'>Lead Enrichment</a>
-                <a href='https://www.saleswhale.com/data-collection'>Workflow Integration</a>
-            </LinksContainer>
-            <LinksContainer>
-                <SubHeading>Company</SubHeading>
-                <a href='https://www.saleswhale.com/about'>About us</a>
-                <a href='https://blog.saleswhale.com/'>Blog</a>
-                <a href='https://blog.saleswhale.com/'>Resources</a>
-                <a href='https://jobs.lever.co/saleswhale/'>Careers</a>
-                <a href='https://blog.saleswhale.com/'>Help Centre</a>
-            </LinksContainer>
-            <LinksContainer>
-                <SubHeading>Contact</SubHeading>
-                <a href='mailto:hello@saleswhale.com'>hello@saleswhale.com</a>
-                <OfficeContainer>
-                    <SubHeading>US Office</SubHeading>
-                    <p>1701 Rhode Island Ave NW Washington, DC 20036</p>
-                </OfficeContainer>
-                <OfficeContainer>
-                    <SubHeading>Singapore Office</SubHeading>
-                    <p>155B Telok Ayer Street Singapore, 068611</p>
-                </OfficeContainer>
-            </LinksContainer>
+            </ImageContainer1>
+            ) : <div></div>}
+
+            <ResponsiveContainer>
+                <LinksContainer>
+                    <SubHeading>Why saleswhale</SubHeading>
+                    <a href='https://www.saleswhale.com/platform'>Collaborative Intelligence</a>
+                    <a href='https://www.saleswhale.com/marketing'>AI Assistant Capabilities</a>
+                    <a href='https://www.saleswhale.com/sales'>Customer Stories</a>
+                    <a href='https://www.saleswhale.com/technology'>Use Case - Technology</a>
+                    <a href='https://www.saleswhale.com/education'>Use Case - Education</a>
+                    <a href='https://www.saleswhale.com/events'>Use Case - Events</a>
+                </LinksContainer>
+                <LinksContainer>
+                    <SubHeading>Product</SubHeading>
+                    <a href='https://www.saleswhale.com/conversations'>AI Conversations</a>
+                    <a href='https://www.saleswhale.com/reveal'>Deal Intelligence</a>
+                    <a href='https://www.saleswhale.com/data-collection'>Lead Enrichment</a>
+                    <a href='https://www.saleswhale.com/data-collection'>Workflow Integration</a>
+                </LinksContainer>
+            </ResponsiveContainer>
+
+            <ResponsiveContainer>
+                <LinksContainer>
+                    <SubHeading>Company</SubHeading>
+                    <a href='https://www.saleswhale.com/about'>About us</a>
+                    <a href='https://blog.saleswhale.com/'>Blog</a>
+                    <a href='https://blog.saleswhale.com/'>Resources</a>
+                    <a href='https://jobs.lever.co/saleswhale/'>Careers</a>
+                    <a href='https://blog.saleswhale.com/'>Help Centre</a>
+                </LinksContainer>
+                <LinksContainer>
+                    <SubHeading>Contact</SubHeading>
+                    <a href='mailto:hello@saleswhale.com'>hello@saleswhale.com</a>
+                    <OfficeContainer>
+                        <SubHeading>US Office</SubHeading>
+                        <p>1701 Rhode Island Ave NW Washington, DC 20036</p>
+                    </OfficeContainer>
+                    <OfficeContainer>
+                        <SubHeading>Singapore Office</SubHeading>
+                        <p>155B Telok Ayer Street Singapore, 068611</p>
+                    </OfficeContainer>
+                </LinksContainer>
+            </ResponsiveContainer>
         </Container>
+        </>
     )
 }
 
@@ -57,28 +85,93 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: baseline;
     width: 100%;
-    margin: 2rem auto 3rem auto;
-    padding: 1rem;
+    margin: 1rem auto 3rem auto;
+    /* padding: 1rem; */
+    overflow-x: hidden;
     max-width: 1440px;
-
+    @media(max-width: 786px){
+        
+    }
     @media(max-width: 500px){
-        flex-direction: column;
-        margin: 0 auto 3rem auto;
+        padding: 0;
+        margin: 1rem 0;
+        justify-content: center;
+        font-size: 13px;
     }
 `
 
-const ImageContainer = styled.div`
+const ImageContainer1 = styled.div`
     display: flex;
     justify-content: flex-start;
-    width: 13%;
+    width: 300px;
+    margin: 0 10rem 0 2rem;
+    visibility: visible;
+    @media(max-width: 786px){
+        width: 225px;
+        margin-right: 2rem;
+    }
+    @media(max-width: 500px){
+        
+    }
     img {
         width:100%;
+    }
+`
+
+const ImageContainer2 = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 0 0 2rem;
+    width: 13%;
+    visibility: hidden;
+    @media(max-width: 786px){
+        width: 35%;
+        margin-right: 2rem;
+    }
+    @media(max-width: 500px){
+        visibility: visible;
+        /* width: 50%; */
+        margin-right: 0;
+        padding: 2rem 0 1rem 1rem;
+    }
+    img {
+        width:100%;
+    }
+`
+
+const ResponsiveContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 1rem;
+    @media(max-width: 786px){
+        display: flex;
+        flex-direction: column;
+    }
+    @media(max-width: 500px){
+        padding: 0 3rem;
+        margin: 0 auto;
+    }
+    @media(max-width: 320px){
+        padding: 0 2rem;
     }
 `
 
 const LinksContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin: 0 3rem;
+    @media(max-width: 786px){
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    @media(max-width: 500px){
+         margin: 1rem 0; 
+        padding: 0;
+        justify-content: flex-start;
+    }
     a {
         color: ${theme.color.black};
         text-decoration: none;
@@ -92,6 +185,12 @@ const LinksContainer = styled.div`
 const OfficeContainer = styled.div`
     width: 60%;
     margin-top: 1rem;
+    @media(max-width: 786px){
+        margin-top: 1rem;
+    }
+    @media(max-width: 500px){
+        width: 100%;
+    }
 `
 
 const SubHeading = styled.p`

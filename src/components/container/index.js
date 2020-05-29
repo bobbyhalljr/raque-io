@@ -4,7 +4,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 3rem auto;
+    margin: 2rem auto;
     max-width: 1440px;
 
     @media(max-width: 500px){

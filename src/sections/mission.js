@@ -149,7 +149,7 @@ const Box = styled.div`
     @media(max-width: 500px){
         width: 100%;
         justify-content: flex-start;
-        margin: 0;
+        margin: 1rem 0;
         height: auto;
     }
 

@@ -40,46 +40,102 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 4rem 4rem;
+    padding: 4rem;
     background: #F4F4F4;
     position: relative;
+    overflow-x: hidden;
+    @media(max-width: 500px){
+        padding: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+
     .blue-wave {
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 3;
+        @media(max-width: 786px){
+            width: 100%;
+        }
+        @media(max-width: 500px){
+            width: 1038px;
+            height: 40.98px;
+            left: -424px;
+            bottom: 0;
+        }
     }
     .purple-wave {
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: 2;
+        @media(max-width: 786px){
+            width: 100%;
+            bottom: 0;
+        }
+        @media(max-width: 500px){
+            width: 950px;
+            height: 100px;
+            left: -400px;
+            right: 10px;
+            bottom: -10px;
+        }
     }
     .yellow-circle {
         position: absolute;
         bottom: 0;
         right: 500px;
         z-index: 1;
+        @media(max-width: 786px){
+            width: 210px;
+            height: 60px;
+            right: 230px;
+            top: 280px;
+            overflow: hidden;
+        }
+        @media(max-width: 500px){
+            right: 60px;
+            top: 310px;
+        }
     }
 `
 
 const TextContainer = styled.div`
+    @media(max-width: 500px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
 `
 
 const Paragraph = styled.p`
     margin-top: 2rem;
+    @media(max-width: 500px){
+        font-size: 15px;
+        white-space: nowrap;
+        margin-bottom: 6rem;
+    }
 `
 
 const SocialLinks = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-top: 2rem;
     img {
         padding: 0.5rem;
+    }
+    @media(max-width: 500px){
+        padding-top: 0;
     }
 `
 
 const BoldText = styled.span`
     font-weight: ${theme.fontWeight.bold};
-    padding: 0 1rem 2rem 0;
+    padding: 0.5rem 0;
 `
