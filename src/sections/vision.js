@@ -15,7 +15,7 @@ const Vision = () => {
                 A future where Team collaboration is easy and fun!
             </HeadLineText>
             <ParagraphContainer>
-                <p>At Raque.io, we believe that the future of work is Collaborative in real time with the best tools.</p>
+                <p>At Raque.io, we believe that the future of work is Collaboration in real time with the best tools.</p>
                 <p>World class integrations so that us humans focus on creative, high-impact work that creates value and inspires. The result? Happier and more productive teams doing meaningful work.</p>
                 <p>Our mission is to foster team communication in every company that could greatly benefit from it, and we're starting off strong addressing this need in software development teams all across the world.</p>
             </ParagraphContainer>
