@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {IoLocationOutline} from 'react-icons/io5'
 
 import theme from '../theme';
 import HeadlineText from '../components/headerText';
@@ -13,14 +14,20 @@ const Offices = () => {
         <HeadlineText>Our Offices</HeadlineText>
         <Container>
             <Card>
-                <Image src={officeImage} alt='cartoon character'/>
-                <SubHeading>Singapore</SubHeading>
-                <Paragraph>155B Telok Ayer Street <br /> Singapore, 068611</Paragraph>
+                {/* <Image src={officeImage} alt='cartoon character'/> */}
+                <IconContainer>
+                    <IoLocationOutline />
+                </IconContainer>
+                <SubHeading>New York, NY</SubHeading>
+                <Paragraph>455 I love NY Street <br /> New York, NY, 068611</Paragraph>
             </Card>
             <Card>
-                <Image src={officeImage} alt='cartoon character'/>
+                {/* <Image src={officeImage} alt='cartoon character'/> */}
+                <IconContainer>
+                    <IoLocationOutline />
+                </IconContainer>
                 <SubHeading>Washington DC</SubHeading>
-                <Paragraph>1701 Rhode Island Ave NW <br /> Washington, DC 20036</Paragraph>
+                <Paragraph>1701 washington Street <br /> Washington, DC 20036</Paragraph>
             </Card>
             <img className='pink-slant' src={pinkSlant} alt='pink slant' />
         </Container>
@@ -29,6 +36,19 @@ const Offices = () => {
 }
 
 export default Offices;
+
+const IconContainer = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    border-radius: ${theme.borderRadius.circle};
+    background: #bae1ff;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 50%;
+    color: ${theme.color.primaryBlue};
+    box-shadow: ${theme.boxShadow.cardSmall};
+`
 
 
 const OuterContainer = styled.div`

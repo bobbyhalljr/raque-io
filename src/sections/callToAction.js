@@ -10,8 +10,8 @@ const CallToAction = () => {
         <Container>
             <HeaderText white>See the future</HeaderText>
             <ButtonContainer>
-                <ButtonLink href='https://www.saleswhale.com/get-a-free-demo?ref=topNav' center boxShadow>Get a Demo</ButtonLink>
-                <ButtonLink href='https://www.saleswhale.com/education' center outlineInverse>Read use cases</ButtonLink>
+                <ButtonLink href='#' center boxShadow>Get a Demo</ButtonLink>
+                <ButtonLink href='#' center outlineInverse>Read use cases</ButtonLink>
             </ButtonContainer>
         </Container>
     )

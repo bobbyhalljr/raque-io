@@ -31,11 +31,13 @@ export const theme = {
     },
     padding: '1rem 0.5rem',
     boxShadow: {
-        card: '0px 10px 40px rgba(0, 0, 0, 0.08)',
+        cardSmall: '1px 1px 10px rgba(0, 0, 0, 0.2)',
+        card: '3px 3px 20px rgba(0, 0, 0, 0.2)',
+        cardLarge: '1px 1px 15px rgba(0, 0, 0, 0.2)',
         ctaButton: '0px 5px 15px rgba(0, 0, 0, 0.3)',
     },
     borderRadius: {
-        default: '5px',
+        default: '1rem',
         circle: '50%',
     },
 }

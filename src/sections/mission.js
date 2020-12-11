@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {IoBuildOutline, IoHeartOutline, IoBulbOutline} from 'react-icons/io5'
 
 import missionImage from '../assets/images/mission-image.jpg';
 import ButtonLink from '../components/buttonLink';
@@ -9,33 +10,64 @@ const Mission = () => {
     return (
         <Container>
             <HeaderText>Our Culture</HeaderText>
-            <LightText>At Saleswhale, we encourage everyone to grow and innovate, while having fun in the process.</LightText>
+            <LightText>At Raque.io, we encourage everyone to grow and innovate, while having fun in the process.</LightText>
             <BoxDiv>
                 <Box>
-                    <img src={missionImage} alt='Cartoon girl' />
+                    {/* <img src={missionImage} alt='Cartoon girl' /> */}
+                    <IconContainer>
+                        <IoBuildOutline />
+                    </IconContainer>
                     <h5>Building for the future</h5>
                     <p>We always challenge the status quo and work hard innovating on a product that not only works, but changes the game for our users.</p>
                 </Box>
                 <Box>
-                    <img src={missionImage} alt='Cartoon girl' />
+                    {/* <img src={missionImage} alt='Cartoon girl' /> */}
+                    <HeartIconContainer>
+                        <IoHeartOutline />
+                    </HeartIconContainer>
                     <h5>Promoting trust & transparency</h5>
                     <p>We remain completely open, honest and transparent with everyone. This has allowed us to build strong relationships with each other.</p>
                 </Box>
                 <Box>
-                    <img src={missionImage} alt='Cartoon girl' />
+                    {/* <img src={missionImage} alt='Cartoon girl' /> */}
+                    <BulbIconContainer>
+                        <IoBulbOutline />
+                    </BulbIconContainer>
                     <h5>Achieving our very best</h5>
                     <p>We believe the success of the company lies within our employees and we constantly challenge each other to learn and level up</p>
                 </Box>
             </BoxDiv>
             <DarkText>If you are excited by our vision of the future, and want to solve meaningful problems, talk to us!</DarkText>
             <ButtonContainer>
-                <ButtonLink href='https://jobs.lever.co/saleswhale/' primary center>Join the team</ButtonLink>
+                <ButtonLink href='#' primary center>Join the team</ButtonLink>
             </ButtonContainer>
         </Container>
     )
 }
 
 export default Mission;
+
+const IconContainer = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    border-radius: ${theme.borderRadius.circle};
+    background: #bae1ff;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: ${theme.color.primaryBlue};
+    box-shadow: ${theme.boxShadow.cardSmall};
+`
+
+const HeartIconContainer = styled(IconContainer)`
+    background: #ffb3ba;
+    color: red;
+`
+
+const BulbIconContainer = styled(IconContainer)`
+    background: #baffc9;
+    color: green;
+`
 
 const Container = styled.div`
     display: flex;
@@ -77,7 +109,12 @@ const ButtonContainer = styled.div`
     margin: 0.5rem auto;
     white-space: nowrap;
     width: 30%;
-
+    a {
+        box-shadow: ${theme.boxShadow.ctaButton};
+        &:hover {
+            box-shadow: ${theme.boxShadow.cardLarge};
+        }
+    }
     @media(max-width: 500px){
         margin: 0 auto;
         width: 100%;

@@ -28,13 +28,13 @@ const Navbar = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <a href="/">Why SalesWhale?</a>
+            <a href="/">Why Raque.io?</a>
             <a href="/">Product</a>
             <a href="/">Company</a>
           </NavLinks>
           <ButtonContainer>
-            <ButtonLink href='https://app.saleswhale.com/login' outline>Login</ButtonLink>
-            <ButtonLink href='https://www.saleswhale.com/get-a-free-demo?ref=topNav' primary>Get a Demo</ButtonLink>
+            <ButtonLink href='#' outline>Login</ButtonLink>
+            <ButtonLink href='#' primary>Get a Demo</ButtonLink>
           </ButtonContainer>
           <BurgerWrapper>
             <BurgerMenu

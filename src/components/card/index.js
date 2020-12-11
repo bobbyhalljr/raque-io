@@ -12,7 +12,9 @@ const Card = styled.div`
     background: ${theme.color.white};
     width: 40%;
     z-index: 3;
-
+    &:hover {
+        box-shadow: ${theme.boxShadow.cardLarge}
+    }
     @media(max-width: 500px){
         width: 90%;
         margin: 1rem auto;

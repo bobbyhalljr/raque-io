@@ -17,7 +17,7 @@ const TimeLine = () => {
                         <ImageContainer>
                             <img src={envolope} alt='envolope icons'/>
                         </ImageContainer>
-                        <h4 id='timeline-text' >Founded in Singapore by Gabriel Lim, Ethan Le, and Venus Wong</h4>
+                        <h4 id='timeline-text' >Founded by John Doe and Jane Doe</h4>
                     </TimeLineInfo>
 
                     <TimeLineInfo>
@@ -25,7 +25,7 @@ const TimeLine = () => {
                         <ImageContainer>
                             <img src={envolope} alt='envolope icons'/>
                         </ImageContainer>
-                        <h4 id='timeline-text' >Accepted into Y Combinator (S16) and moved to San Francisco</h4>
+                        <h4 id='timeline-text' >Accepted into start-up accelerator and moved to San Francisco</h4>
                     </TimeLineInfo>
 
                     <TimeLineInfo>
@@ -33,7 +33,7 @@ const TimeLine = () => {
                         <ImageContainer>
                             <img src={envolope} alt='envolope icons'/>
                         </ImageContainer>
-                        <h4 id='timeline-text' >Raised US$1.2M in seed funding and hired core engineers</h4>
+                        <h4 id='timeline-text' >Raised US$1.5M in seed funding and hired core engineers</h4>
                     </TimeLineInfo>
 
                     <TimeLineInfo>
@@ -41,7 +41,7 @@ const TimeLine = () => {
                         <ImageContainer>
                             <img src={envolope} alt='envolope icons'/>
                         </ImageContainer>
-                        <h4 id='timeline-text' >Raised US$5.3M in Series A and expanded team size</h4>
+                        <h4 id='timeline-text' >Raised US$10.3M in Series A and expanded team size</h4>
                     </TimeLineInfo>
 
                     <TimeLineInfo>
@@ -49,7 +49,7 @@ const TimeLine = () => {
                         <ImageContainer>
                             <img src={envolope} alt='envolope icons'/>
                         </ImageContainer>
-                        <h4 id='timeline-text'>Opened US office in Washington, DC and hired US sales team</h4>
+                        <h4 id='timeline-text'>Raised US$100M in Series B and expanded team size again!</h4>
                     </TimeLineInfo>
 
                 </TimeLineInfoContainer>
@@ -76,11 +76,12 @@ const BlueBgDiv = styled.div`
     border-radius: ${theme.borderRadius.default};
     position: relative;
     max-width: 1440px;
+    box-shadow: ${theme.boxShadow.card};
     @media(max-width: 786px){
         width: 90%;
     }
     @media(max-width: 500px){
-        width: 100%;
+        /* width: 90%; */
         margin: 2rem 0;
         padding: 0 1rem;
     }

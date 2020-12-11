@@ -1,24 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import heroImage from '../assets/images/hero-img.png';
+import heroImage from '../assets/illustrations/hero-illustration.jpg';
 import theme from '../theme';
 
 const Vision = () => {
     return (
         <>
         <HeroImgContainer>
-            <Image src={heroImage} alt='a painting'/>
+            <Image src={heroImage} alt='A graphic of people working'/>
         </HeroImgContainer>
         <Container>
             <HeadLineText>
-                A future where AI and humans work hand in hand
+                A future where Team collaboration is easy and fun!
             </HeadLineText>
             <ParagraphContainer>
-                <p>At Saleswhale, we believe that the future of work is Collaborative Intelligence - where machines and AI help humans fulfil their highest potential by automating drudgery and producing for more effective results.</p>
-                <p>AI assistants help to automate repetitive and mundane tasks so that us humans focus on creative, high-impact work that creates value and inspires. The result? Happier and more productive teams doing meaningful work.</p>
-                <p>Our mission is to put an AI assistant in every company that could greatly benefit from it, and we're starting off strong addressing this need in marketing and sales teams all across the world.</p>
-                <p>The future is where AI and humans work hand in hand, and we’re here to help businesses benefit from that.</p>
+                <p>At Raque.io, we believe that the future of work is Collaborative in real time with the best tools.</p>
+                <p>World class integrations so that us humans focus on creative, high-impact work that creates value and inspires. The result? Happier and more productive teams doing meaningful work.</p>
+                <p>Our mission is to foster team communication in every company that could greatly benefit from it, and we're starting off strong addressing this need in software development teams all across the world.</p>
             </ParagraphContainer>
         </Container>
         </>
@@ -46,17 +45,35 @@ const Container = styled.div`
 const HeroImgContainer = styled.div`
     display: flex;
     justify-content: center;
-    width: 90%;
     max-width: 1440px;
-    height: 300px;
-    margin: 6rem auto 1rem auto;
-
+    height: 80vh;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto 3rem auto;
+    padding-top: 3rem;
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        box-shadow: ${theme.boxShadow.cardLarge};
+        border-radius: ${theme.borderRadius.default};
+        @media(max-width: 786px){
+            height: auto;
+        }
+    }
     @media(max-width: 786px){
-        margin: 5rem auto 1rem auto;
+        height: auto;
+        /* margin: 5rem auto 1rem auto; */
+        margin: 0 auto 2rem auto;
+        width: 90%;
+        padding-top: 4rem;
     }
 
     @media(max-width: 500px){
-        margin: 7rem auto 1rem auto;
+        margin: 0 auto 2rem auto;
+        /* width: 90%; */
+        padding-top: 7rem;
+        /* margin: 0 auto 1rem auto; */
     }
 `
 

@@ -15,7 +15,12 @@ const BottomFooter = () => {
             <TextContainer>
                 <BoldText>Privacy</BoldText>
                 <BoldText>Terms</BoldText>
-                <Paragraph>© 2020 Saleswhale, Inc. All rights reserved.</Paragraph>
+                <Paragraph>© 2020 Raque.io Inc. <br /> All rights reserved</Paragraph>
+                <Paragraph>Raque.io is not a real company</Paragraph>
+                <Paragraph>
+                    Made with ❤️ and hard work by: <br /> 
+                    <Link href='https://bobbybytez.io'>Bobby Hall Jr</Link>
+                </Paragraph>
             </TextContainer>
             <SocialLinks>
                 <img src={facebook} alt='facebook' />
@@ -31,11 +36,21 @@ const BottomFooter = () => {
 
 export default BottomFooter;
 
+const Link = styled.a`
+    color: ${theme.color.black};
+    text-decoration: none;
+    margin-top: 1rem;
+    color: ${theme.color.primaryBlue};
+    &:hover {
+        color: #333;
+    }
+`
+
 
 const Container = styled.div`
     width: 100%;
     max-width: 1440px;
-    height: 350px;
+    height: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -44,6 +59,7 @@ const Container = styled.div`
     background: #F4F4F4;
     position: relative;
     overflow-x: hidden;
+    overflow-y: hidden;
     @media(max-width: 500px){
         padding: 2rem;
         display: flex;
@@ -87,18 +103,18 @@ const Container = styled.div`
     .yellow-circle {
         position: absolute;
         bottom: 0;
-        right: 500px;
+        right: 300px;
         z-index: 1;
         @media(max-width: 786px){
             width: 210px;
             height: 60px;
-            right: 230px;
-            top: 280px;
+            right: 100px;
+            top: 330px;
             overflow: hidden;
         }
         @media(max-width: 500px){
             right: 60px;
-            top: 310px;
+            top: 430px;
         }
     }
 `
@@ -114,11 +130,11 @@ const TextContainer = styled.div`
 `
 
 const Paragraph = styled.p`
-    margin-top: 2rem;
+    margin-top: 1rem;
     @media(max-width: 500px){
         font-size: 15px;
         white-space: nowrap;
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
     }
 `
 

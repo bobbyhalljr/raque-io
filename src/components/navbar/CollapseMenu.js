@@ -61,14 +61,14 @@ const CollapseMenu = (props) => {
       >
         <div>
         <NavLinks>
-          <li><a href="/" onClick={props.handleNavbar}>Why SalesWhale?</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>Why Raque.io?</a></li>
           <li><a href="/" onClick={props.handleNavbar}>Products</a></li>
           <li><a href="/" onClick={props.handleNavbar}>Company</a></li>
         </NavLinks>
         </div>
         <ButtonContainer>
-            <ButtonLink href='https://app.saleswhale.com/login' outline center>Login</ButtonLink>
-            <ButtonLink href='https://www.saleswhale.com/get-a-free-demo?ref=topNav' primary center>Get a Demo</ButtonLink>
+            <ButtonLink href='#' outline center>Login</ButtonLink>
+            <ButtonLink href='#' primary center>Get a Demo</ButtonLink>
           </ButtonContainer>
       </CollapseWrapper>
     );

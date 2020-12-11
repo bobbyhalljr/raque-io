@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-import salesWhaleLogo from '../assets/logos/sales-whale-logo.svg';
 import theme from '../theme';
 
 const Footer = () => {
@@ -22,54 +21,49 @@ const Footer = () => {
         <>
         {/* hidden on desktop / visible on mobile */}
         <ImageContainer2>
-            <img src={salesWhaleLogo} alt='saleswhale logo' />
+            {/* <img src={salesWhaleLogo} alt='saleswhale logo' /> */}
+
         </ImageContainer2>
         <Container>
             {/* render this logo only on desktop */}
             {isMobile ? (
                 <ImageContainer1>
-                <img src={salesWhaleLogo} alt='saleswhale logo' />
-            </ImageContainer1>
+                {/* <img src={salesWhaleLogo} alt='saleswhale logo' /> */}
+                    <Logo>Raque.io</Logo>
+                </ImageContainer1>
             ) : <div></div>}
 
             <ResponsiveContainer>
                 <LinksContainer>
-                    <SubHeading>Why saleswhale</SubHeading>
-                    <a href='https://www.saleswhale.com/platform'>Collaborative Intelligence</a>
-                    <a href='https://www.saleswhale.com/marketing'>AI Assistant Capabilities</a>
-                    <a href='https://www.saleswhale.com/sales'>Customer Stories</a>
-                    <a href='https://www.saleswhale.com/technology'>Use Case - Technology</a>
-                    <a href='https://www.saleswhale.com/education'>Use Case - Education</a>
-                    <a href='https://www.saleswhale.com/events'>Use Case - Events</a>
+                    <SubHeading>Why Raque.io</SubHeading>
+                    <a href='#'>Collaborative Teamwork</a>
+                    <a href='#'>Track Daily Stand-ups</a>
+                    <a href='#'>Real-time Chat</a>
                 </LinksContainer>
                 <LinksContainer>
                     <SubHeading>Product</SubHeading>
-                    <a href='https://www.saleswhale.com/conversations'>AI Conversations</a>
-                    <a href='https://www.saleswhale.com/reveal'>Deal Intelligence</a>
-                    <a href='https://www.saleswhale.com/data-collection'>Lead Enrichment</a>
-                    <a href='https://www.saleswhale.com/data-collection'>Workflow Integration</a>
+                    <a href='#'>Real-time Collaboration</a>
+                    <a href='#'>Customizable channels</a>
+                    <a href='#'>Daily Stand-ups</a>
+                    <a href='#'>Github Integration</a>
                 </LinksContainer>
             </ResponsiveContainer>
 
             <ResponsiveContainer>
                 <LinksContainer>
                     <SubHeading>Company</SubHeading>
-                    <a href='https://www.saleswhale.com/about'>About us</a>
-                    <a href='https://blog.saleswhale.com/'>Blog</a>
-                    <a href='https://blog.saleswhale.com/'>Resources</a>
-                    <a href='https://jobs.lever.co/saleswhale/'>Careers</a>
-                    <a href='https://blog.saleswhale.com/'>Help Centre</a>
+                    <a href='#'>About us</a>
+                    <a href='#'>Blog</a>
+                    <a href='#'>Resources</a>
+                    <a href='#'>Careers</a>
+                    <a href='#'>Help Center</a>
                 </LinksContainer>
                 <LinksContainer>
                     <SubHeading>Contact</SubHeading>
-                    <a href='mailto:hello@saleswhale.com'>hello@saleswhale.com</a>
+                    <a href='#'>hello@raque.com</a>
                     <OfficeContainer>
                         <SubHeading>US Office</SubHeading>
-                        <p>1701 Rhode Island Ave NW Washington, DC 20036</p>
-                    </OfficeContainer>
-                    <OfficeContainer>
-                        <SubHeading>Singapore Office</SubHeading>
-                        <p>155B Telok Ayer Street Singapore, 068611</p>
+                        <p>1234 on the way Washington, DC 12345</p>
                     </OfficeContainer>
                 </LinksContainer>
             </ResponsiveContainer>
@@ -79,6 +73,12 @@ const Footer = () => {
 }
 
 export default Footer;
+
+const Logo = styled.h1`
+  font-weight: 700;
+  font-size: 2rem;
+  color: ${theme.color.primaryBlue};
+`
 
 const Container = styled.div`
     display: flex;
