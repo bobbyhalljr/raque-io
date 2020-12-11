@@ -21,6 +21,9 @@ const BottomFooter = () => {
                     Made with ❤️ and hard work by: <br /> 
                     <Link href='https://bobbybytez.io'>Bobby Hall Jr</Link>
                 </Paragraph>
+                <Paragraph>
+                <a href="https://www.freepik.com/vectors/computer">Computer vector created by pikisuperstar - www.freepik.com</a>
+                </Paragraph>
             </TextContainer>
             <SocialLinks>
                 <img src={facebook} alt='facebook' />
