@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 import styled from 'styled-components';
 
 import theme from '../theme';
@@ -12,7 +12,7 @@ const Footer = () => {
     }
     
     // listen from screen size changes
-    useEffect(() => {
+    useCallback(() => {
         window.addEventListener("resize", updateLogo);
         return () => window.removeEventListener("resize", updateLogo);
     }, [updateLogo])
@@ -160,6 +160,7 @@ const LinksContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     margin: 0 3rem;
+    font-size: 1rem;
     @media(max-width: 786px){
         margin-bottom: 3rem;
         display: flex;

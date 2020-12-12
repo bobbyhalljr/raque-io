@@ -22,7 +22,8 @@ const BottomFooter = () => {
                     <Link href='https://bobbybytez.io'>Bobby Hall Jr</Link>
                 </Paragraph>
                 <Paragraph>
-                <a href="https://www.freepik.com/vectors/computer">Computer vector created by pikisuperstar - www.freepik.com</a>
+                    Computer vector created by:
+                    <Link href="https://www.freepik.com/vectors/computer"> pikisuperstar - www.freepik.com</Link>
                 </Paragraph>
             </TextContainer>
             <SocialLinks>
@@ -30,9 +31,9 @@ const BottomFooter = () => {
                 <img src={twitter} alt='twitter' />
                 <img src={linkedin} alt='linkedin' />
             </SocialLinks>
-            <img className='blue-wave' src={blueWave} alt='blue wave' />
-            <img className='purple-wave' src={purpleWave} alt='purple wave' />
-            <img className='yellow-circle' src={yellowCircle} alt='yellow circle' />
+                <img className='blue-wave' src={blueWave} alt='blue wave' />
+                <img className='purple-wave' src={purpleWave} alt='purple wave' />
+                <img className='yellow-circle' src={yellowCircle} alt='yellow circle' />
         </Container>
     )
 }
@@ -116,8 +117,8 @@ const Container = styled.div`
             overflow: hidden;
         }
         @media(max-width: 500px){
-            right: 60px;
-            top: 430px;
+            right: 50px;
+            top: 550px;
         }
     }
 `
@@ -128,7 +129,8 @@ const TextContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 4rem;
     }
 `
 
@@ -136,7 +138,7 @@ const Paragraph = styled.p`
     margin-top: 1rem;
     @media(max-width: 500px){
         font-size: 15px;
-        white-space: nowrap;
+        /* white-space: nowrap; */
         margin-bottom: 2rem;
     }
 `
