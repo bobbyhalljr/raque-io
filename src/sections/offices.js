@@ -43,13 +43,21 @@ const IconContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: ${theme.borderRadius.circle};
     background: #bae1ff;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     margin-bottom: 1rem;
     color: ${theme.color.primaryBlue};
     box-shadow: ${theme.boxShadow.cardSmall};
+    @media(max-width: 786px){
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    @media(max-width: 500px){
+        padding: 1rem;
+        font-size: 2rem;
+    }
 `
 
 
