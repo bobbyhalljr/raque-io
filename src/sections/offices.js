@@ -42,7 +42,7 @@ const IconContainer = styled.div`
     font-size: 2rem;
     border-radius: ${theme.borderRadius.circle};
     background: #bae1ff;
-    padding: 1rem 1rem 1.3rem 1rem;
+    padding: 1rem;
     margin: 1rem auto;
     color: ${theme.color.primaryBlue};
     box-shadow: ${theme.boxShadow.cardSmall};
