@@ -43,6 +43,7 @@ const IconContainer = styled.div`
     background: #bae1ff;
     padding: 1rem;
     margin: 1rem auto;
+    border-radius: 5rem;
     color: ${theme.color.primaryBlue};
     box-shadow: ${theme.boxShadow.cardSmall};
 `
