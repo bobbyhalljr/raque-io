@@ -14,16 +14,20 @@ const Offices = () => {
         <HeadlineText>Our Offices</HeadlineText>
         <Container>
             <Card>
-                <IconContainer>
-                    <IoLocationOutline />
-                </IconContainer>
+                <div style={{ width: '25%', margin: '0 auto' }}>
+                    <IconContainer>
+                        <IoLocationOutline />
+                    </IconContainer>
+                </div>
                 <SubHeading>New York, NY</SubHeading>
                 <Paragraph>123 I love NY Street <br /> New York, NY 123456</Paragraph>
             </Card>
             <Card>
-                <IconContainer>
-                    <IoLocationOutline />
-                </IconContainer>
+                <div style={{ width: '25%', margin: '0 auto' }}>
+                    <IconContainer>
+                        <IoLocationOutline />
+                    </IconContainer>
+                </div>
                 <SubHeading>Washington DC</SubHeading>
                 <Paragraph>1234 Washington Street <br /> Washington, DC 123456</Paragraph>
             </Card>
@@ -42,8 +46,8 @@ const IconContainer = styled.div`
     font-size: 2rem;
     border-radius: ${theme.borderRadius.circle};
     background: #bae1ff;
-    padding: 2rem;
-    margin: 1rem auto;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
     color: ${theme.color.primaryBlue};
     box-shadow: ${theme.boxShadow.cardSmall};
 `
