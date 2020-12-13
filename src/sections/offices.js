@@ -37,13 +37,12 @@ export default Offices;
 
 const IconContainer = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-size: 2rem;
     border-radius: ${theme.borderRadius.circle};
     background: #bae1ff;
-    padding: 1rem;
+    padding: 1.5rem 1.5rem;
     margin: 1rem auto;
-    border-radius: 5rem;
     color: ${theme.color.primaryBlue};
     box-shadow: ${theme.boxShadow.cardSmall};
 `
