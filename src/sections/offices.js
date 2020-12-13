@@ -14,7 +14,6 @@ const Offices = () => {
         <HeadlineText>Our Offices</HeadlineText>
         <Container>
             <Card>
-                {/* <Image src={officeImage} alt='cartoon character'/> */}
                 <IconContainer>
                     <IoLocationOutline />
                 </IconContainer>
@@ -22,7 +21,6 @@ const Offices = () => {
                 <Paragraph>123 I love NY Street <br /> New York, NY 123456</Paragraph>
             </Card>
             <Card>
-                {/* <Image src={officeImage} alt='cartoon character'/> */}
                 <IconContainer>
                     <IoLocationOutline />
                 </IconContainer>
@@ -45,7 +43,6 @@ const IconContainer = styled.div`
     background: #bae1ff;
     padding: 1rem;
     margin: 1rem auto;
-    max-width: 50%;
     color: ${theme.color.primaryBlue};
     box-shadow: ${theme.boxShadow.cardSmall};
 `
