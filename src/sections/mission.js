@@ -10,7 +10,7 @@ const Mission = () => {
     return (
         <Container>
             <HeaderText>Our Culture</HeaderText>
-            <LightText>At Raque.io, we encourage everyone to grow and innovate, while having fun in the process.</LightText>
+            <LightText>At Raque, we encourage everyone to grow and innovate, while having fun in the process.</LightText>
             <BoxDiv>
                 <Box>
                     {/* <img src={missionImage} alt='Cartoon girl' /> */}

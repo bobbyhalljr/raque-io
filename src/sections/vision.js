@@ -7,18 +7,19 @@ import theme from '../theme';
 const Vision = () => {
     return (
         <>
-        <HeroImgContainer>
-            <Image src={heroImage} alt='A graphic of people working'/>
-        </HeroImgContainer>
         <Container>
-            <HeadLineText>
-                A future where Team collaboration is easy and fun!
-            </HeadLineText>
-            <ParagraphContainer>
-                <p>At Raque.io, we believe that the future of work is Collaboration in real time with the best tools.</p>
-                <p>World class integrations so that us humans focus on creative, high-impact work that creates value and inspires. The result? Happier and more productive teams doing meaningful work.</p>
-                <p>Our mission is to foster team communication in every company that could greatly benefit from it, and we're starting off strong addressing this need in software development teams all across the world.</p>
-            </ParagraphContainer>
+            <TextContainer>
+                <HeadLineText>
+                    A future where Team collaboration is easy and fun!
+                </HeadLineText>
+                <ParagraphContainer>
+                    <p>At Raque, we believe that the future of work is Collaboration in real time with the best tools.</p>
+                    <p>Our mission is to foster team communication in every company that could greatly benefit from it, and we're starting off strong addressing this need in software development teams all across the world.</p>
+                </ParagraphContainer>
+            </TextContainer>
+            <HeroImgContainer>
+                <Image src={heroImage} alt='A graphic of people working'/>
+            </HeroImgContainer>
         </Container>
         </>
     )
@@ -26,43 +27,46 @@ const Vision = () => {
 
 export default Vision;
 
+const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+`
+
 const Container = styled.div`
     display: flex;
-    margin: 1rem auto;
-    padding: 0 3.5rem;
+    margin: 2rem auto 1rem auto;
     width: 100%;
-    max-width: 1440px;
-
+    max-width: 980px;
     @media(max-width: 786px){
-        padding: 0 1.5rem;
+        flex-direction: column-reverse;
     }
 
     @media(max-width: 500px){
-        flex-direction: column;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 `
 
 const HeroImgContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    max-width: 1440px;
-    height: 80vh;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
-    margin: 0 auto 3rem auto;
+    margin: 4rem 4rem 0 0;
     padding-top: 3rem;
     img {
-        max-width: 100%;
+        /* max-width: 100%; */
         height: auto;
         width: 100%;
         box-shadow: ${theme.boxShadow.cardLarge};
         border-radius: ${theme.borderRadius.default};
         @media(max-width: 786px){
-            height: auto;
+            /* height: auto; */
         }
     }
     @media(max-width: 786px){
-        height: auto;
+        /* height: auto; */
         /* margin: 5rem auto 1rem auto; */
         margin: 0 auto 2rem auto;
         width: 90%;
@@ -71,7 +75,7 @@ const HeroImgContainer = styled.div`
 
     @media(max-width: 500px){
         margin: 0 auto 2rem auto;
-        /* width: 90%; */
+        width: 90%;
         padding-top: 7rem;
         /* margin: 0 auto 1rem auto; */
     }
@@ -86,9 +90,10 @@ const Image = styled.img`
 const ParagraphContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
+    margin: 1rem;
     @media(max-width: 786px){
-        width: 50%;
+        width: 90%;
     }
     @media(max-width: 500px){
         width: 100%;
@@ -102,10 +107,10 @@ const ParagraphContainer = styled.div`
 
 const HeadLineText = styled.h1`
     margin: 1rem;
-    font-size: ${theme.fontSize.h1};
+    font-size: ${theme.fontSize.h2};
     font-weight: ${theme.fontWeight.bold};
     line-height: ${theme.lineHeight.headingDesktop};
-    width: 50%;
+    width: 70%;
 
     @media(max-width: 786px){
         text-align: left;

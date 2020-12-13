@@ -61,7 +61,7 @@ const CollapseMenu = (props) => {
       >
         <div>
         <NavLinks>
-          <li><a href="/" onClick={props.handleNavbar}>Why Raque.io?</a></li>
+          <li><a href="/" onClick={props.handleNavbar}>Why Raque?</a></li>
           <li><a href="/" onClick={props.handleNavbar}>Products</a></li>
           <li><a href="/" onClick={props.handleNavbar}>Company</a></li>
         </NavLinks>

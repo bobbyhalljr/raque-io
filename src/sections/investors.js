@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import {FaPiggyBank} from 'react-icons/fa'
+import {GiHummingbird, GiWaveSurfer} from 'react-icons/gi'
+import {FaCat} from 'react-icons/fa'
 
 import theme from '../theme';
 import YClogo from '../assets/logos/yc-logo.svg';
@@ -20,18 +23,34 @@ const Investors = () => {
         <img className='blue-circle' src={blueCircle} alt='blue circle' />
         <img className='yellow-circle' src={yellowCircle} alt='yellow circle' />
             <Card>
-                <Image src={YClogo} alt='Ycombinator logo' />
+                {/* <Image src={YClogo} alt='Ycombinator logo' /> */}
+                <IconContainer>
+                    <GiWaveSurfer className='icon'/>
+                    <div>Surfs-Up Capital</div>
+                </IconContainer>
             </Card>
             <Card>
-                <Image src={monksHill} alt='wave maker logo' />
+                {/* <Image src={monksHill} alt='wave maker logo' /> */}
+                <IconContainer>
+                    <FaPiggyBank className='icon'/>
+                    <div>PiggyBank Ventures</div>
+                </IconContainer>
             </Card>
         </Container>
         <Container>
             <Card>
-                <Image src={strive} alt='Ycombinator logo' />
+                {/* <Image src={strive} alt='Ycombinator logo' /> */}
+                <IconContainer>
+                    <FaCat className='icon'/>
+                    <div>Cat Capital</div>
+                </IconContainer>
             </Card>
             <Card>
-                <Image src={waveMaker} alt='wave maker logo' />
+                {/* <Image src={waveMaker} alt='wave maker logo' /> */}
+                <IconContainer>
+                    <GiHummingbird className='icon'/>
+                    <div>Hummingbird Ventures</div>
+                </IconContainer>
             </Card>
         </Container>
         </OuterContainer>
@@ -126,7 +145,19 @@ const Container = styled.div`
 
     @media(max-width: 500px){
         flex-direction: column;
-        margin: 0 auto 3rem auto;
+        margin: 0 auto;
+    }
+`
+
+const IconContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    color: #333;
+    .icon {
+        font-size: 4rem;
     }
 `
 

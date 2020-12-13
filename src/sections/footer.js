@@ -29,13 +29,13 @@ const Footer = () => {
             {isMobile ? (
                 <ImageContainer1>
                 {/* <img src={salesWhaleLogo} alt='saleswhale logo' /> */}
-                    <Logo>Raque.io</Logo>
+                    <Logo>Raque</Logo>
                 </ImageContainer1>
             ) : <div></div>}
 
             <ResponsiveContainer>
                 <LinksContainer>
-                    <SubHeading>Why Raque.io</SubHeading>
+                    <SubHeading>Why Raque</SubHeading>
                     <a href='#'>Collaborative Teamwork</a>
                     <a href='#'>Track Daily Stand-ups</a>
                     <a href='#'>Real-time Chat</a>
@@ -62,8 +62,12 @@ const Footer = () => {
                     <SubHeading>Contact</SubHeading>
                     <a href='#'>hello@raque.com</a>
                     <OfficeContainer>
-                        <SubHeading>US Office</SubHeading>
-                        <p>1234 on the way Washington, DC 12345</p>
+                        <SubHeading>DC Office</SubHeading>
+                        <p>1234 Washington Street, DC 123456</p>
+                    </OfficeContainer>
+                    <OfficeContainer>
+                        <SubHeading>NY Office</SubHeading>
+                        <p>123 I love NY Street, NY 123456</p>
                     </OfficeContainer>
                 </LinksContainer>
             </ResponsiveContainer>

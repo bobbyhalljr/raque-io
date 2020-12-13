@@ -13,10 +13,8 @@ const BottomFooter = () => {
     return (
         <Container>
             <TextContainer>
-                <BoldText>Privacy</BoldText>
-                <BoldText>Terms</BoldText>
-                <Paragraph>© 2020 Raque.io Inc. <br /> All rights reserved</Paragraph>
-                <Paragraph>Raque.io is not a real company</Paragraph>
+                <Paragraph>© 2020 Bobby Hall Jr <br /> All rights reserved</Paragraph>
+                {/* <Paragraph>Raque is not a real company</Paragraph> */}
                 <Paragraph>
                     Made with ❤️ and hard work by: <br /> 
                     <Link href='https://bobbybytez.io'>Bobby Hall Jr</Link>
@@ -31,9 +29,11 @@ const BottomFooter = () => {
                 <img src={twitter} alt='twitter' />
                 <img src={linkedin} alt='linkedin' />
             </SocialLinks>
+            {/* <div>
                 <img className='blue-wave' src={blueWave} alt='blue wave' />
                 <img className='purple-wave' src={purpleWave} alt='purple wave' />
                 <img className='yellow-circle' src={yellowCircle} alt='yellow circle' />
+            </div> */}
         </Container>
     )
 }
@@ -54,18 +54,17 @@ const Link = styled.a`
 const Container = styled.div`
     width: 100%;
     max-width: 1440px;
-    height: 400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 4rem;
+    padding: 3rem;
     background: #F4F4F4;
     position: relative;
     overflow-x: hidden;
     overflow-y: hidden;
     @media(max-width: 500px){
-        padding: 2rem;
+        padding: 1rem 2rem;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -124,6 +123,9 @@ const Container = styled.div`
 `
 
 const TextContainer = styled.div`
+@media(max-width: 900px){
+    margin-bottom: 10rem;
+}
     @media(max-width: 500px){
         display: flex;
         flex-direction: column;
@@ -138,8 +140,7 @@ const Paragraph = styled.p`
     margin-top: 1rem;
     @media(max-width: 500px){
         font-size: 15px;
-        /* white-space: nowrap; */
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 `
 

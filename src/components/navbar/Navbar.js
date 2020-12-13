@@ -28,7 +28,7 @@ const Navbar = (props) => {
         <FlexContainer>
           <Brand />
           <NavLinks style={linkAnimation}>
-            <a href="/">Why Raque.io?</a>
+            <a href="/">Why Raque?</a>
             <a href="/">Product</a>
             <a href="/">Company</a>
           </NavLinks>

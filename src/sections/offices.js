@@ -19,7 +19,7 @@ const Offices = () => {
                     <IoLocationOutline />
                 </IconContainer>
                 <SubHeading>New York, NY</SubHeading>
-                <Paragraph>455 I love NY Street <br /> New York, NY, 068611</Paragraph>
+                <Paragraph>123 I love NY Street <br /> New York, NY 123456</Paragraph>
             </Card>
             <Card>
                 {/* <Image src={officeImage} alt='cartoon character'/> */}
@@ -27,7 +27,7 @@ const Offices = () => {
                     <IoLocationOutline />
                 </IconContainer>
                 <SubHeading>Washington DC</SubHeading>
-                <Paragraph>1701 washington Street <br /> Washington, DC 20036</Paragraph>
+                <Paragraph>1234 Washington Street <br /> Washington, DC 123456</Paragraph>
             </Card>
             <img className='pink-slant' src={pinkSlant} alt='pink slant' />
         </Container>
@@ -76,7 +76,6 @@ const Container = styled.div`
     margin: 3rem auto 0 auto;
     padding-bottom: 1rem;
     max-width: 1440px;
-
     @media(max-width: 500px){
         flex-direction: column;
         margin: 0 auto;
