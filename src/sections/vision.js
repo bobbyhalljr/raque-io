@@ -37,7 +37,7 @@ const Container = styled.div`
     display: flex;
     margin: 2rem auto 1rem auto;
     width: 100%;
-    max-width: 980px;
+    max-width: 1024px;
     @media(max-width: 786px){
         flex-direction: column-reverse;
     }
@@ -53,7 +53,7 @@ const Container = styled.div`
 const HeroImgContainer = styled.div`
     width: 100%;
     box-sizing: border-box;
-    margin: 4rem 4rem 0 0;
+    margin: 4rem 2rem 0 0;
     padding-top: 3rem;
     img {
         /* max-width: 100%; */

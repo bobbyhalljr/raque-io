@@ -5,10 +5,6 @@ import {GiHummingbird, GiWaveSurfer} from 'react-icons/gi'
 import {FaCat} from 'react-icons/fa'
 
 import theme from '../theme';
-import YClogo from '../assets/logos/yc-logo.svg';
-import waveMaker from '../assets/logos/wavemaker.svg';
-import strive from '../assets/logos/strive.svg';
-import monksHill from '../assets/logos/monks-hill.svg';
 import pinkSlant from '../assets/graphics/pink-slant-bg-2.svg';
 import Card from '../components/card';
 import blueCircle from '../assets/graphics/blue-circle.svg';
@@ -23,14 +19,12 @@ const Investors = () => {
         <img className='blue-circle' src={blueCircle} alt='blue circle' />
         <img className='yellow-circle' src={yellowCircle} alt='yellow circle' />
             <Card>
-                {/* <Image src={YClogo} alt='Ycombinator logo' /> */}
                 <IconContainer>
                     <GiWaveSurfer className='icon'/>
                     <div>Surfs-Up Capital</div>
                 </IconContainer>
             </Card>
             <Card>
-                {/* <Image src={monksHill} alt='wave maker logo' /> */}
                 <IconContainer>
                     <FaPiggyBank className='icon'/>
                     <div>PiggyBank Ventures</div>
@@ -39,14 +33,12 @@ const Investors = () => {
         </Container>
         <Container>
             <Card>
-                {/* <Image src={strive} alt='Ycombinator logo' /> */}
                 <IconContainer>
                     <FaCat className='icon'/>
                     <div>Cat Capital</div>
                 </IconContainer>
             </Card>
             <Card>
-                {/* <Image src={waveMaker} alt='wave maker logo' /> */}
                 <IconContainer>
                     <GiHummingbird className='icon'/>
                     <div>Hummingbird Ventures</div>
